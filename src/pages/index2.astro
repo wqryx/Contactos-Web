@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="/src/styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de contactos</h1>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Añadir / Editar contacto</h2>
+            <form id="contact-form">
+                <input type="hidden" id="contact-id">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required>
+                <label for="phone">Teléfono:</label>
+                <input type="text" id="phone" required>
+                <button type="submit">Guardar contacto</button>
+            </form>
+        </section>
+
+        <section id="search-section">
+            <h2>Buscar contacto</h2>
+            <input type="text" id="search-phone" placeholder="Introduce número de teléfono" />
+            <button id="search-btn">Buscar</button>
+            <div id="search-result"></div>
+        </section>
+
+        <section id="contacts-list">
+            <h2>Contactos</h2>
+            <ul id="contact-list-ul"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>Contact Manager App</p>
+    </footer>
+    <script src="/src/scripts/script.js" is:inline></script>
+</body>
+</html>
